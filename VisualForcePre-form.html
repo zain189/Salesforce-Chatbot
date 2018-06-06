@@ -25,11 +25,15 @@ Last name: <input type='text' name='liveagent.prechat:LastName'
 id='lastName' /><br />
 Email: <input type='text' name='liveagent.prechat:Email' id='email' /><br
 />
-<!-- Used to set the visitor's name for the agent in the Console -->
-<input type="hidden" name="liveagent.prechat.name" id="prechat_field_name"
-/>
-<input type='submit' value='Chat Now' id='prechat_submit'
-onclick="setName()"/>
+<input type="hidden" name= "liveagent.prechat.save:FirstName" value=
+"FirstName__c" />
+<input type="hidden" name= "liveagent.prechat.save:LastName" value=
+"LastName__c" />
+<input type="hidden" name= "liveagent.prechat.save:Email" value=
+"Email__c" />
+
+<input type="hidden" name="liveagent.prechat.name" id="prechat_field_name"/>
+<input type='submit' value='Chat Now' id='prechat_submit' onclick="setName()"/>
 <!-- Set the visitor's name for the agent in the Console to first and last
 name provided by the customer -->
 	<script type="text/javascript">
